@@ -1,0 +1,96 @@
+.circle{
+    position: relative;
+	width:100px;
+	height:100px;
+	border:1px solid #d7d2d6;
+	border-radius:50%;
+	background-color:royalblue;
+    background-image: url("D:/sumanhtmlresume/resume-app/src/Assests/Sri Venkateshwara Swamy Wallpaper.jpg");
+    background-size: cover;
+}
+
+.headerbg{
+    position: relative;
+    background-color: rgb(38, 75, 224);
+    text-align:justify;
+    color: aliceblue;
+}
+
+.container{
+    width: 100%;
+    padding: 35px 10%;
+}
+ .container{
+    padding-right: calc(10% - 30px);
+ }
+main.row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+}
+
+.col header.title{
+    font-family: Arial, Helvetica, sans-serif;
+    color: royalblue;
+    padding: 0px 0px 20px 30px;
+
+}
+
+.col .contents{
+    padding: 0px 50px;
+    border-left: 1px solid royalblue;
+}
+
+.col .contents .box{
+    position: relative;
+    padding: 5px;
+    border: 1px solid royalblue;
+    background-color: #e3e7eb3b;
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-bottom: 10px;
+}
+
+
+.col .contents .box::before{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    right: calc(100% + 43px);
+    top: 0;
+    background-color: yellow;
+    border: 2px solid royalblue;
+}
+
+
+.box h4{
+    position: relative;
+    color: #11a372;
+
+}
+
+/* @media(max-width: 200px){
+    main.row{
+        grid-template-columns: 1fr;
+    }
+
+    .row .col:nth-child(2){
+        margin-top: 10px;
+    }
+} */
+
+
+@media screen and (max-width:1200px) {
+    main.row {
+        grid-template-columns: 1fr;
+    }
+   } 
+
+
+@media screen and (min-width:1200px) {
+    main.row {
+        grid-template-columns: 1fr;
+    }
+   }

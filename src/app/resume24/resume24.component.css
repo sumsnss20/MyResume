@@ -1,0 +1,295 @@
+
+html{
+    font-family: 'Open Sans',sans-serif;
+    background: whitesmoke;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+hr{
+    background: grey;
+}
+#container{
+    position: relative;
+    display: flex;
+}
+
+#info-cards{
+    flex: 55%;
+    display: block;
+    margin-top: 5%;
+    margin-right: 10%;
+    width: 100%;
+    height: 100%;
+}
+.image{
+    position: relative;
+    overflow: hidden;
+    text-align: start;
+}
+#profile-photo{
+   
+    position: relative;
+    width: 180px;
+    height: 169px;
+    display: block;
+    border:2px solid royalblue;
+    border-radius: 80%; 
+    background-image: url("D:/sumanhtmlresume/sumanresume24/src/assests/Suman S Web Development.jpg");
+    background-size: cover !important;
+    overflow: hidden;
+}
+
+#image > a{
+    position: absolute;
+    top:0;
+    left:0;
+    background: rgba(0,0,0,0.5) !important;
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+#image > a > i{
+    -webkit-text-stroke: 1px #ffffffdd;
+    padding: 10%;
+}
+#image:hover a{
+    display: block;
+}
+.name{
+    font-size: 35px !important;
+    line-height: 35px !important;
+}
+#about,.card > ul > li{
+    padding: 0 0 0 15px;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+#about{
+    font-size: 20px !important;
+    padding: 0 !important;
+}
+#name, #about > p{
+    font-weight: bolder;
+    font-family: 'Open Sans', sans-serif;
+}
+#email{
+    font-size: 15px !important;
+    font-weight: bold !important;
+    font-family: 'Cutive Mono',monospace;
+}
+#college,#email,#year-graduation,#education,#more-about,#telephone,#fax{
+    color: #555;
+    font-size: 13.5px;
+}
+strong,span{
+    color: black;
+    font-size: 16px;
+}
+#social-links,#about{
+    display: inline-block;
+}
+#social-links{
+    text-align: center;
+    margin-bottom: 12px;
+}
+#social-links a{
+    text-align: center;
+    margin: 0 10px;
+}
+#edit-intro{
+    display: block;
+    color:#097bbf;
+    font-family: 'Nunito', sans-serif;
+}
+.fab{
+    font-size: 1.1em;
+}
+.fab,.fas{
+    color: whitesmoke;
+}
+#about > a{
+    top: 4px;
+    right: 8px;
+}
+.edit{
+    top: 19px;
+    right: 10px;
+}
+#about > a, .edit{
+    position: absolute;
+    font-size: 15px !important;
+}
+.stroke-transparent {
+ -webkit-text-stroke: 1px #000;
+ -webkit-text-fill-color: transparent;
+}
+.blue{
+    color: #097bbf !important;
+    font-size: 13px;
+}
+.stroke-transparent-blue {
+ -webkit-text-stroke: 1px #097bbf;
+ -webkit-text-fill-color: transparent;
+}
+
+.cardprofile{
+    box-shadow: 0 3px 10px 0 rgba(0,0,0,.1);
+    overflow-x: hidden;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 12px 15px 0px 30px;
+    background-color: #fff;
+    margin-left: 3rem;
+}
+
+.aboutprofile{
+    margin-top: 1px;
+}
+
+.card{
+    box-shadow: 0 3px 10px 0 rgba(0,0,0,.1);
+    overflow-x: hidden;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    padding: 12px 15px 0px 30px;
+    background-color: #fff;
+    margin-left: 3rem;
+}
+.card > p{
+    color: #0e141e;
+    font-weight: bolder;
+    font-size: 16px;
+    line-height: 2;
+    text-align: left;
+}
+.card > p > i{
+    font-size: 18px;
+}
+.card > a{
+    font-weight: 400;
+    font-size: 15px;
+    margin: 0;
+    margin-left: 25px;
+    padding: 0;
+    border: 0;
+    height: auto;
+    background: transparent;
+    color: #097bbf;
+    outline: none;
+    cursor: pointer;
+}
+.card > ul{
+    list-style-type: none;
+}
+.tags{
+    font-size: 17px;
+    font-weight: bolder;
+}
+.tags ~ a{
+    display: none !important;
+}
+.tags span{
+    font-size: 14px;
+    font-weight: normal;
+    color: #0e141e;
+}
+.tags span span{
+    color: #738f93;
+}
+
+
+main.row{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+}
+
+.col header.title{
+    font-family: Arial, Helvetica, sans-serif;
+    color: royalblue;
+    padding: 0px 0px 20px 30px;
+
+}
+
+.col .contents{
+    padding: 0px 50px;
+    border-left: 1px solid royalblue;
+}
+
+.col .contentsright{
+    padding: 0px 20px;
+    border-left: 1px solid royalblue;
+}
+
+.col .contents .box{
+    position: relative;
+    padding: 5px;
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-bottom: 10px;
+}
+
+
+.col .contents .box::before{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    right: calc(100% + 43px);
+    top: 0;
+    background-color: yellow;
+    border: 2px solid rgba(184, 185, 189, 0.681);
+}
+
+
+.box h4{
+    font-size: 25px;
+    position: relative;
+
+}
+
+.chips{
+
+    background-color: #3638387a;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 6px;
+    border: none !important;
+    padding: 6px 14px;
+    color: #fff;
+}
+
+
+@media screen and (max-width:850px){
+    #profile{
+        margin-left: 0%;
+    }
+}
+@media screen and (max-width:1200px){
+    #container{
+        display:flex;
+    }
+    #profile{
+        width: 100%;
+    }
+    .card{
+        margin: 0 5%;
+        margin-bottom: 30px;
+    }
+}
+
+/* @media (min-width: 750px) {
+    .h4, h4 {
+        font-size: 1rem;
+        margin-bottom: 25px;
+    }
+} */
