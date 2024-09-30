@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
 export class Resume24Component {
 
 
-  eMail: string = " suman.suresh11120@gmail.com";
+  eMail: string = " sumanharsha1997@gmail.com";
  
 
 }
