@@ -25,7 +25,7 @@ hr{
 }
 
 #profile-photo{
-    position: relative;
+    position: absolute !important;
     width: 180px;
     height: 169px;
     display: block;
@@ -34,9 +34,9 @@ hr{
     background-image: url("../../assests/Suman\ S\ Web\ Development.jpg");
     background-size: cover !important;
     overflow: hidden;
-    text-align: start;
-    margin-top: 1 rem;
-    margin-left: 0rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-left: 1rem;
 }
 
 #image > a{
