@@ -19,15 +19,15 @@ hr{
     
     display: block;
     margin-top: 0%;
-    margin-right: 2%;
+    margin-right: 0%;
     width: 100%;
     height: 100%;
 }
 
 #profile-photo{
     position: absolute !important;
-    width: 180px;
-    height: 169px;
+    width: 222px;
+    height: 222px;
     display: block;
     border:2px solid royalblue;
     border-radius: 80%; 
@@ -35,8 +35,6 @@ hr{
     background-size: cover !important;
     overflow: hidden;
     text-align: center;
-    margin-top: 2rem;
-    margin-left: 1rem;
 }
 
 #image > a{
@@ -158,7 +156,8 @@ strong,span{
     margin-bottom: 30px;
     padding: 12px 15px 0px 30px;
     background-color: #fff;
-    margin-left: 3rem;
+    margin-left: 1rem;
+    margin-right: 0.5rem;
 }
 .card > p{
     color: #0e141e;
